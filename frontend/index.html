@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-powered interactive programming tutor for learning coding concepts">
+    <title>AI Programming Tutor - Learn to Code Interactively</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <span class="logo-icon"></span>
+                AI Programming Tutor
+            </h1>
+            <p class="tagline">Master coding concepts with AI-powered guidance</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <div class="container">
+            <div class="grid">
+                <!-- Sidebar - Topic Selection -->
+                <aside class="sidebar">
+                    <div class="card">
+                        <h2 class="section-title"> Topics</h2>
+                        <div id="topicsList" class="topics-list">
+                            <div class="loading">Loading topics...</div>
+                        </div>
+                    </div>
+
+                    <div class="card stats-card">
+                        <h3 class="mini-title"> Features</h3>
+                        <ul class="features-list">
+                            <li> Concept Explanations</li>
+                            <li> Code Examples</li>
+                            <li> Practice Problems</li>
+                            <li> Solution Validation</li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Main Content Area -->
+                <section class="content-area">
+                    <!-- Welcome Screen -->
+                    <div id="welcomeScreen" class="welcome-screen">
+                        <div class="welcome-content">
+                            <h2 class="welcome-title">Welcome to AI Programming Tutor! 👋</h2>
+                            <p class="welcome-text">
+                                Select a topic from the sidebar to start learning.
+                                Get AI-powered explanations, examples, and practice problems.
+                            </p>
+                            <div class="welcome-animation">
+                                <div class="code-block-demo">
+                                    <span class="code-comment"># Start your coding journey</span><br>
+                                    <span class="code-keyword">def</span> <span class="code-function">learn</span>():
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span
+                                        class="code-string">"Success!"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Learning Section -->
+                    <div id="learningSection" class="learning-section" style="display: none;">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 id="currentTopic" class="section-title">Topic</h2>
+                                <div class="action-buttons">
+                                    <button id="getExamplesBtn" class="btn btn-secondary">
+                                         Show Examples
+                                    </button>
+                                    <button id="getPracticeBtn" class="btn btn-primary">
+                                         Practice Problem
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Explanation Area -->
+                            <div id="explanationArea" class="content-section">
+                                <div class="loading">Loading explanation...</div>
+                            </div>
+
+                            <!-- Examples Area -->
+                            <div id="examplesArea" class="content-section" style="display: none;">
+                            </div>
+
+                            <!-- Practice Area -->
+                            <div id="practiceArea" class="content-section" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p> Built with AI • Powered by OpenAI • Learn. Code. Grow.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
